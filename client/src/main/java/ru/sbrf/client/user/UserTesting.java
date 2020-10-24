@@ -19,9 +19,9 @@ public class UserTesting {
     private Putting putting;
 
     public void run(){
-        user.setNumberUser(123); //Установка переменной, которая потом не используется
+        user.setNumberUser(1); //Установка переменной, которая потом не используется
         user.setStringFIO("Иванов иван Иванович"); //Установка переменной, которая потом не используется
-        user.setNumberAccount("1234500001"); //Установка переменной, которая потом не используется
+        user.setNumberAccount("1110222");
         System.out.println(" ----------------- Тестирование номера телефона -------------------- ");
         user.setPhone(new PhoneOnlyDigits("9O57770377"));
         System.out.println( user.validationPhone() );
@@ -32,10 +32,15 @@ public class UserTesting {
         System.out.println( user.validationPhone(ValidationFuncOfPhone_Strong::func) );
         System.out.println( user.validationPhone((Phone t)->"Все номера телефонов плохие"));
         System.out.println(" ----------------- Тестирование платежей --------------------------- ");
-        Date date = new Date();
-        PaymentRequest paymentRequest1 = user.getParametersPayment(date, 400, Currency.RUB );
-        putting.putPayment(paymentRequest1);
-        putting.putPayment(paymentRequest1);
+        Date date;
+        PaymentRequest paymentRequest;
+        date = new Date();
+        paymentRequest = user.getParametersPayment(date, 1400, Currency.RUB );
+        putting.putPayment(paymentRequest);
+        putting.putPayment(paymentRequest);
+        date = new Date();
+        paymentRequest = user.getParametersPayment(date, 900, Currency.RUB );
+        putting.putPayment(paymentRequest);
         System.out.println(" ------------------------------------------------------------------- ");
     }
 }

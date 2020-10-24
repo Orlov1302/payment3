@@ -1,0 +1,14 @@
+DROP TABLE IF EXISTS Accounts;
+
+CREATE TABLE Accounts (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  number CHARACTER VARYING(50) NOT NULL,
+  balance INT DEFAULT 0
+);
+
+INSERT INTO Accounts (id, number, balance) VALUES
+  (1,'1110111',1000),
+  (2,'1110222',2000),
+  (4,'1110444',3000),
+  (3,'1110333',3000);
+

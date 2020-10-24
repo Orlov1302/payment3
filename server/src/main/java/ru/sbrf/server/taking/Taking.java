@@ -4,8 +4,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import ru.sbrf.common.PaymentRequest;
 import ru.sbrf.common.PaymentResponse;
-import ru.sbrf.server.server.Server;
-
+import ru.sbrf.server.service.Server;
 
 @RestController
 @AllArgsConstructor

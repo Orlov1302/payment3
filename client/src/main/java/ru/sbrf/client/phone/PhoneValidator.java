@@ -23,7 +23,7 @@ public class PhoneValidator<T extends Phone>{
                 error = "Исключение NULL при проверке телефона.";
             }
             if( !error.equals("") ){
-                throw new PhoneException(error, tPhone.numberPhone);
+                throw new PhoneException(error, tPhone.getNumberPhone());
             }
         }
     }

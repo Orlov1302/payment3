@@ -6,7 +6,7 @@ import lombok.Getter;
 @AllArgsConstructor
 @Getter
 public class Phone {
-    protected String numberPhone;
+    private String numberPhone;
     public String getMaskNumberPhone() {
         return "";
     }

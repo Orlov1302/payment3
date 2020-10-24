@@ -52,7 +52,7 @@ public class User {
     }
 
 
-    public PaymentRequest getParametersPayment(Date date, long summa, Currency currency ){
+    public PaymentRequest getParametersPayment(Date date, int summa, Currency currency ){
         if( numberAccount == null || phone == null || date == null ){
             return new PaymentRequest(new Date(),"", "", 0, currency);
         }else{
