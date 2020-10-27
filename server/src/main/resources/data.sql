@@ -9,6 +9,5 @@ CREATE TABLE Accounts (
 INSERT INTO Accounts (id, number, balance) VALUES
   (1,'1110111',1000),
   (2,'1110222',2000),
-  (4,'1110444',3000),
   (3,'1110333',3000);
 
