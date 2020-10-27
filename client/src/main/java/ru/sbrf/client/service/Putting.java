@@ -1,4 +1,4 @@
-package ru.sbrf.client.putting;
+package ru.sbrf.client.service;
 
 import org.json.JSONException;
 import org.json.JSONObject;
