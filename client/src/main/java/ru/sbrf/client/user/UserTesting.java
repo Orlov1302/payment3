@@ -20,6 +20,7 @@ public class UserTesting {
         user.setNumberUser(1); //Установка переменной, которая потом не используется
         user.setStringFIO("Иванов иван Иванович"); //Установка переменной, которая потом не используется
         user.setNumberAccount("1110222");
+        user.setPhone(new Phone("+79057770377", "+79999999999" ));
         System.out.println(" ----------------- Тестирование номера телефона -------------------- ");
         Phone phone = new Phone("+89057770377", "+79999999999" );
         System.out.println( phone.validationPhone() );
