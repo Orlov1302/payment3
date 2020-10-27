@@ -7,7 +7,6 @@ import java.util.Date;
 @Setter
 @Getter
 @EqualsAndHashCode
-//@Value
 public class PaymentRequest {
     private Date date;
     private String numberAccount;
